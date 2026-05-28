@@ -61,7 +61,8 @@
                         class="fordform"
                         required
                     >
-                     <input
+
+                    <input
                         type="text"
                         name="sobrenome"
                         placeholder="SOBRENOME*"
@@ -77,7 +78,7 @@
                         required
                     >
 
-                  <input
+                    <input
                         type="tel"
                         name="telefone"
                         placeholder="TELEFONE*"
@@ -86,7 +87,7 @@
                         oninvalid="this.setCustomValidity('Digite apenas números no telefone')"
                         oninput="this.setCustomValidity('')"
                         pattern="[0-9]+"
->
+                    >
 
                     <select
                         name="contato"
@@ -114,6 +115,41 @@
                         required
                     ></textarea>
 
+                    <p class="lgpd-texto">
+                        Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você.
+                        A qualquer momento, será possível editar ou remover tais dados.
+                    </p>
+
+                    <div class="checkbox-area">
+
+                        <input type="checkbox" id="termos">
+
+                        <label for="termos">
+                            Sim. Li e concordo com os
+
+                            <a
+                                href="https://www.ford.com.br/politica-de-privacidade/"
+                                target="_blank"
+                            >
+                                Termos e Condições
+                            </a>
+                        </label>
+
+                    </div>
+
+                    <br>
+
+                    <div class="checkbox-area">
+
+                        <input type="checkbox" id="novidades">
+
+                        <label for="novidades">
+                            Sim. Também quero receber descontos e novidades.
+                        </label>
+
+                    </div>
+
+                    <br>
                     <button type="submit">
                         Enviar
                     </button>

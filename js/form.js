@@ -18,14 +18,25 @@ class Contato {
 
 function Post(form) {
 
+    const termos = document.getElementById("termos");
+
+    if (!termos.checked) {
+
+        alert("Você precisa concordar com os Termos e Condições.");
+
+        return;
+    }
+
     const Contato = {
+
         nome: form.elements.namedItem("nome").value,
         sobrenome: form.elements.namedItem("sobrenome").value,
         email: form.elements.namedItem("email").value,
         telefone: form.elements.namedItem("telefone").value,
         contato: form.elements.namedItem("contato").value,
         mensagem: form.elements.namedItem("mensagem").value
-    }
+
+    };
 
     console.log(Contato);
     console.log("Mensagem:", Contato.mensagem);
