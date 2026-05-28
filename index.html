@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ford</title>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo-topo">
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- CARROSSEL -->
+        <div id="carousel"></div>
+
+        <!-- TÍTULO -->
+        <div id="carousel-title"></div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+    <!-- REDES SOCIAIS -->
+    <div class="footer-right">
+
+        <span class="redesociais">
+            Redes Sociais:
+        </span>
+
+        <nav id="social">
+            <ul>
+
+                <li>
+                    <a href="#">
+                        <img src="img/facebook-50.png" alt="Facebook">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/youtube-squared-50.png" alt="Youtube">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="img/instagram-logo-50.png" alt="Instagram">
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+    <!-- DIREITOS -->
+    <div class="copyright">
+     © 2026 Ford Motor Company - Todos os direitos reservados.
+
+
+    </div>
+
+    <!-- LOGO FORD -->
+    <div class="footer-logo">
+        <img src="img/ford-96.png" alt="Ford">
+    </div>
+
+</footer>
+
+    <!-- ARRAY -->
+    <script>
+        let carouselArr = [];
+    </script>
+
+    <!-- JS CARROSSEL -->
+    <script src="js/carousel.js"></script>
+
+    <!-- INICIALIZAÇÃO -->
+    <script>
+
+        carouselArr.push(new Carousel(
+            "imagem_1.jpg",
+            "Esta é a nova Ranger Ford 2022. Verifique novidades.",
+            "lancamento.html"
+        ));
+
+        carouselArr.push(new Carousel(
+            "imagem_2.jpg",
+            "Ford a nossa história",
+            "#"
+        ));
+
+        carouselArr.push(new Carousel(
+            "imagem_3.jpg",
+            "Nova Ford Bronco Sport 2022",
+            "lancamento.html"
+        ));
+
+        Carousel.Start(carouselArr);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.fordform {
+    display: block;
+    width: 300px;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    height: 26px;
+    margin: 8px;
+    padding: 5px 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+
+    background-color: #fff;
+}
+
+/* placeholder */
+
+.fordform::placeholder {
+    color: #555;
+    font-weight: 600;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* select */
+
+select.fordform {
+    width: 322px;
+    height: 38px;
+
+    color: #555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* textarea */
+
+textarea.fordform {
+    height: 65px;
+    resize: none;
+    padding-top: 10px;
+}
+
+/* focus */
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+
+    outline: none;
+    border: 1px solid #1b357e;
+}
+
+/* layout */
+
+main div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.forms {
+    display: block;
+    text-align: center;
+}
+
+/* titulo */
+
+h2 {
+    text-align: left;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+
+    color: #1b357e;
+
+    margin-bottom: 12px;
+}
+
+.titulo {
+    margin-left: 8px;
+}
+
+/* botão */
+
+button {
+    width: 320px;
+    height: 45px;
+
+    margin: 15px 8px 0 8px;
+
+    display: block;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* efeito hover */
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background-color: #1b357e;
+}
