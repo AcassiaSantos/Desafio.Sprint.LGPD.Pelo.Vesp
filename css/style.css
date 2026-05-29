@@ -285,3 +285,46 @@ button:hover {
         font-size: 12px;
     }
 }
+/* =======================
+   BOTÕES CARROSSEL
+======================= */
+
+.carousel-buttons {
+
+    position: relative;
+}
+
+.carousel-buttons button {
+
+    position: absolute;
+
+    top: -250px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    z-index: 10;
+
+    margin: 0% -3%;
+
+    background-color: #1b357e;
+}
+
+/* botão esquerda */
+
+.carousel-buttons button:first-child {
+
+    left: 20px;
+}
+
+/* botão direita */
+
+.carousel-buttons button:last-child {
+
+    right: 20px;
+}

@@ -1,6 +1,7 @@
 class Carousel {
 
     constructor(image, text, link) {
+
         this.image = image;
         this.text = text;
         this.link = link;
@@ -12,14 +13,16 @@ class Carousel {
         Carousel._sequence = 0;
         Carousel._size = arr.length;
 
-        Carousel.Next();
+        Carousel.Show();
 
         setInterval(() => {
+
             Carousel.Next();
+
         }, 4000);
     }
 
-    static Next() {
+    static Show() {
 
         let item = Carousel._arr[Carousel._sequence];
 
@@ -33,11 +36,29 @@ class Carousel {
         `;
 
         titleDiv.innerHTML = item.text;
+    }
+
+    static Next() {
 
         Carousel._sequence++;
 
         if (Carousel._sequence >= Carousel._size) {
+
             Carousel._sequence = 0;
         }
+
+        Carousel.Show();
+    }
+
+    static Back() {
+
+        Carousel._sequence--;
+
+        if (Carousel._sequence < 0) {
+
+            Carousel._sequence = Carousel._size - 1;
+        }
+
+        Carousel.Show();
     }
 }
