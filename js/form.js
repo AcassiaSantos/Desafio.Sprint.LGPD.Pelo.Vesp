@@ -2,14 +2,18 @@ class Contato {
 
     constructor(
         nome,
+        sobrenome,
         email,
+        cpf,
         telefone,
         contato,
         mensagem
     ) {
 
         this.nome = nome;
+        this.sobrenome = sobrenome;
         this.email = email;
+        this.cpf = cpf;
         this.telefone = telefone;
         this.contato = contato;
         this.mensagem = mensagem;
@@ -27,25 +31,31 @@ function Post(form) {
         return;
     }
 
-    const Contato = {
+    const contato = {
 
         nome: form.elements.namedItem("nome").value,
         sobrenome: form.elements.namedItem("sobrenome").value,
         email: form.elements.namedItem("email").value,
+        cpf: form.elements.namedItem("cpf").value,
         telefone: form.elements.namedItem("telefone").value,
         contato: form.elements.namedItem("contato").value,
         mensagem: form.elements.namedItem("mensagem").value
 
     };
 
-    console.log(Contato);
-    console.log("Mensagem:", Contato.mensagem);
+    console.log("Nome:", contato.nome);
+    console.log("Sobrenome:", contato.sobrenome);
+    console.log("Email:", contato.email);
+    console.log("CPF:", contato.cpf);
+    console.log("Telefone:", contato.telefone);
+    console.log("Tipo de Contato:", contato.contato);
+    console.log("Mensagem:", contato.mensagem);
 
     alert(
         "Obrigado " +
-        Contato.nome +
+        contato.nome +
         " " +
-        Contato.sobrenome +
+        contato.sobrenome +
         ", seus dados foram enviados!"
     );
 }
