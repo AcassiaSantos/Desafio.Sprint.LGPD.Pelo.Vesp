@@ -58,4 +58,7 @@ function Post(form) {
         contato.sobrenome +
         ", seus dados foram enviados!"
     );
+
+    form.reset();
+
 }
